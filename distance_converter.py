@@ -11,8 +11,10 @@ def miles_to_km(miles):
 # setup the Streamlit app
 st.title("Kilometers ⇄ Miles Converter")
 
+# Create user input
 conversion_directon = st.radio("Choose the conversion direction:", ("Kilometers to Miles", "Miles to Kilometers"))
 
+# condisionals based on the user's selection
 if conversion_directon == "Kilometers to Miles":
     km = st.number_input("Enter distance in kilometers:", min_value=0.0, step=0.1)
     if st.button("Convert"):
