@@ -8,6 +8,13 @@ def miles_to_km(miles):
     """Convert miles to kilometers."""
     return miles / 0.621371
 
+st.set_page_config(
+    page_title="Distance Converter",
+    page_icon="🌍",
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
+
 # setup the Streamlit app
 st.title("Kilometers ⇄ Miles Converter")
 
